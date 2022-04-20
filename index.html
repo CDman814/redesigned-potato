@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Cake Details</title>
+  </head>
+
+  <body>
+    <div
+      class="container-fluid"
+      style="
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap-reverse;
+        align-items: center;">
+      <div class="container links-card">
+        <h1>Wedding Cake Order Details Form</h1>
+      </div>
+      <div class="container form-container">
+        <div class="mb-3">
+          <p style="text-align: center; font-weight: bold">
+            Fill in all fields to complete order</p>
+          <form class="validation" novalidate>
+            <div class="mb-3">
+              <label for="full-name" class="form-prompt">Full name</label>
+              <input
+                required
+                type="text"
+                class="form-entry"
+                id="full-name"
+                placeholder="Cumbie"/>
+            </div>
+            <div class="mb-3">
+              <label for="cake-message" class="form-prompt">Message on cake</label>
+              <input
+                required
+                type="text"
+                class="form-entry"
+                id="cake-message"
+                placeholder="We are getting married"/>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-prompt">Contact email</label>
+              <input
+                required
+                type="email"
+                class="form-entry"
+                id="email"
+                placeholder="example@email.com"/>
+            </div>
+            <div class="mb-3">
+              <label for="date" class="form-prompt">Wedding date</label> <br />
+              <input
+                required
+                class="form-entry"
+                type="text"
+                id="wedding-date"/>
+            </div>
+            <div class="mb-3">
+              <p class="form-prompt">Would you like a topping?</p>
+              <div class="form-check">
+                <input
+                  required
+                  class="form-check"
+                  type="radio"
+                  name="toppings-checked"
+                  id="toppings-checked"/>
+                <label class="toppings-label" for="toppings-checked">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  required
+                  class="form-check"
+                  type="radio"
+                  name="toppings-checked"
+                  id="toppings-checked"/>
+                <label class="toppings-label" for="toppings-checked">
+                  No
+                </label>
+              </div>
+            </div>
+            <div class="mb-3 topping-list">
+              <p class="form-prompt">What would you like for your topping?</p>
+              <select
+                required
+                class="form-select"
+                aria-label="Please select your topping"
+                >
+                <option selected>Please select your topping</option>
+                <option value="1">Almonds</option>
+                <option value="2">Fresh Berries</option>
+                <option value="3">Pretzels</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <p id="success">Thank you!</p>
+              <p id="warning">Please fill all fields</p>
+            </div>
+            <div class="mb-3" style="text-align: center; margin-top: 0.5rem">
+              <button id="clear" type="button" class="btn btn-secondary">Clear</button>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-dark">
+      <div class="container">
+        <!-- <span class="text-muted">Return to the </span> -->
+        <a href="https://github.com/CDman814/redesigned-potato/" class="card-link">View the Repo</a>
+        <span class="text-muted">|</span>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcdman814.github.io%2Fredesigned-potato%2F" class="card-link">Validity Check</a>
+        <span class="text-muted">|</span>
+        <a href="https://www.jellotime.com/" class="card-link">Jello</a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+      integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+      crossorigin="anonymous"></script>  
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
