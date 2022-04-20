@@ -1,2 +1,0 @@
-# redesigned-potato
-India
