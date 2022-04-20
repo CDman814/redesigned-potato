@@ -1,0 +1,44 @@
+body {
+  background: rgb(56, 56, 56);
+  margin: 2rem 0.5rem 0 0.5rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.form-container {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  max-height: 550px;
+  max-width: 450px;
+  padding: 0.5rem 1rem;
+  overflow: auto;
+}
+
+#success {
+  text-align: center;
+  font-weight: bold;
+  color: #00ad4e;
+}
+
+#warning {
+  text-align: center;
+  font-weight: bold;
+  color: #aa0000;
+}
+
+.links-card {
+    margin: 2rem auto;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 450px;
+    min-width: 335px;
+    height: fit-content;
+  }
+  
+.links-card ul {
+    margin: 0;
+  }
